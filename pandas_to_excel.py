@@ -17,6 +17,6 @@ d1 = pd.DataFrame({'cora_semi':l1,
 
 #l could be list or array
 
-writer = pd.ExcelWriter('./gcn_results.xlsx')
-d1.to_excel(writer)
+writer = pd.ExcelWriter('./gcn_results.xlsx') 
+d1.to_excel(writer) #some hyper to choose, columns=['',''],index=False,sheet_name='',encoding='uft-8'
 writer.save()
